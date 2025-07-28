@@ -21,7 +21,7 @@ type accountService struct {
 }
 
 // constructor of the accountService
-func newService(r Repository) Service {
+func NewService(r Repository) Service {
 	return &accountService{r}
 }
 
