@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 go build -ldflags="-w -s" -o /go/bin/app ./account/cmd/account
+RUN CGO_ENABLE=0 go build -ldflags="-w -s" -o /go/bin/app ./catalog/cmd/catalog
 
 FROM scratch
 
